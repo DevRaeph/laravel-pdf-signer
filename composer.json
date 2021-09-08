@@ -1,24 +1,26 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "devraeph/laravel-pdf-signer",
+    "description": "Laravel PDF Signer by DevRaeph",
     "keywords": [
-        ":vendor_name",
+        "DevRaeph",
         "laravel",
-        ":package_slug"
+        "laravel-pdf-signer"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/devraeph/laravel-pdf-signer",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "DevRaeph",
+            "email": "me@devraeph.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.4",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "illuminate/contracts": "^8.37",
+        "tecnickcom/tcpdf": "6.3.*",
+        "setasign/fpdi": "^2.0"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
@@ -30,13 +32,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "DevRaeph\\PdfSigner\\": "src",
+            "DevRaeph\\PdfSigner\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "DevRaeph\\PdfSigner\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +52,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "DevRaeph\\PdfSigner\\PdfSignerServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "PDFSigner": "DevRaeph\\PdfSigner\\Facades\\PdfSigner"
             }
         }
     },

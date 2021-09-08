@@ -1,16 +1,19 @@
 <?php
 
-namespace DevRaeph\PdfSigner;
-
+namespace DevRaeph\PdfSigner\Facades;
+use DevRaeph\PdfSigner\PdfSigner as Signer;
 use Illuminate\Support\Facades\Facade;
-
 /**
- * @see \DevRaeph\PdfSigner\PdfSigner
+ * Class WebToPDF
+ *
+ * @mixin \DevRaeph\PdfSigner\PdfSigner
+ *
+ * @package DevRaeph\PdfSigner\Facades
  */
-class PdfSignerFacade extends Facade
+class PdfSigner extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return PdfSigner::class;
+        return  Signer::class;
     }
 }
