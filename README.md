@@ -1,5 +1,5 @@
 
-![Logo](https://i.ibb.co/cD4Vst1/Pdf-Signer.png)
+![Logo](https://i.postimg.cc/9QL6frpg/Pdf-Signer.png)
 
 # PDF Signer by DevRaeph
 
