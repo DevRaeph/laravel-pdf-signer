@@ -16,18 +16,22 @@
  * | All Rights Reserved
  * |__________________________________________________________
  */
+
 namespace DevRaeph\PdfSigner\Classes;
+
 use setasign\Fpdi\Tcpdf\Fpdi;
+
 // Extend the TCPDF class to create custom Header and Footer
-class PdfBuilder extends Fpdi {
-
+class PdfBuilder extends Fpdi
+{
     //Page header
-    public function Header() {
-
+    public function Header()
+    {
     }
 
     // Page footer
-    public function Footer() {
+    public function Footer()
+    {
         // Position at 15 mm from bottom
         $this->SetY(-15);
         // Set font

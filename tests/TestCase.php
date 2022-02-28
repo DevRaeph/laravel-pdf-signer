@@ -2,16 +2,14 @@
 
 namespace DevRaeph\PdfSigner\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use DevRaeph\PdfSigner\PdfSignerServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
     public function setUp(): void
     {
         parent::setUp();
-
     }
 
     protected function getPackageProviders($app)
