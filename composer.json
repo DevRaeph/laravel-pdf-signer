@@ -12,7 +12,7 @@
         {
             "name": "DevRaeph",
             "email": "me@devraeph.com",
-            "role": "Developer"
+            "role": "Developer" 
         }
     ],
     "require": {
